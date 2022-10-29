@@ -1,0 +1,100 @@
+/* 
+This file contains
+1. Responsive styling of all section
+
+(Breakpoints used are same as bootstrap breakpoints)
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  /*******************************/
+  /* Hero Section start */
+  /*******************************/
+
+  .hero-graph {
+    width: 50%;
+    max-width: 300px;
+  }
+
+  /*******************************/
+  /* Hero Section end */
+  /*******************************/
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*******************************/
+  /* Hero Section start */
+  /*******************************/
+
+  .hero-media-container {
+    width: 500px;
+    margin: auto;
+  }
+
+  /*******************************/
+  /* Hero Section end */
+  /*******************************/
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*******************************/
+  /* Hero Section start */
+  /*******************************/
+
+  .hero-media-container {
+    width: 100%;
+    margin: auto;
+  }
+
+  .hero-pill-card-1 {
+    max-width: 70%;
+  }
+
+  .hero-pill-card-2 {
+    max-width: 55%;
+  }
+
+  /*******************************/
+  /* Hero Section end */
+  /*******************************/
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+  /*******************************/
+  /* Services Section start */
+  /*******************************/
+  .services-section {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 1),
+        rgba(255, 255, 255, 0)
+      ),
+      url('./../img/patterns/wave.svg');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    background-position-y: 50%;
+  }
+
+  /*******************************/
+  /* Services Section end */
+  /*******************************/
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  /*******************************/
+  /* Services Section start */
+  /*******************************/
+  .services-section {
+    background-position-y: -100%;
+  }
+
+  /*******************************/
+  /* Services Section end */
+  /*******************************/
+}

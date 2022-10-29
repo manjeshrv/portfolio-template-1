@@ -1,0 +1,152 @@
+/* 
+This file contains
+1. Mobile first styling of all section
+*/
+
+/* 1. Mobile first styling of all section */
+/*******************************/
+/* Hero Section start */
+/*******************************/
+.hero-section {
+  padding-top: 100px;
+}
+
+.hero-media-container {
+  position: relative;
+}
+
+.hero-graph {
+  width: 200px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.hero-pill-card-container {
+  margin-top: -40px;
+}
+
+.hero-pill-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background-color: #fff;
+  padding: 12px;
+  padding-right: 40px;
+  border-radius: 200px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.hero-pill-card-1 {
+  width: 100%;
+  max-width: 360px;
+}
+
+.hero-pill-card-2 {
+  width: 80%;
+  max-width: 260px;
+}
+
+.hero-pill-card-img {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.hero-pill-card-name {
+}
+
+.hero-pill-card-name h5 {
+  font-size: 16px;
+}
+
+.hero-pill-card-name p {
+  font-size: 12px;
+}
+
+.hero-pill-card-1 p,
+.hero-pill-card-1 .hero-pill-card-time {
+  color: #8593a3;
+}
+
+.hero-pill-card-2 p,
+.hero-pill-card-2 .hero-pill-card-time {
+  color: #ff6954;
+}
+
+.hero-pill-card-time {
+  font-size: 12px;
+  margin-left: auto;
+}
+
+/*******************************/
+/* Hero Section end */
+/*******************************/
+
+/*******************************/
+/* Customer Section start */
+/*******************************/
+.customer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px;
+  justify-content: center;
+}
+
+.customer-logo {
+  height: 25px;
+  width: auto;
+}
+/*******************************/
+/* Customer Section end */
+/*******************************/
+
+/*******************************/
+/* Services Section start */
+/*******************************/
+
+/* Service card */
+.service-card {
+  border-color: #e7e7e7;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.service-card-icon {
+  display: inline-block;
+  background-color: #ececec;
+  padding: 8px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+}
+
+.service-card-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.service-card-title {
+  width: 80%;
+}
+
+.service-card-text {
+  font-size: 14px;
+  color: var(--color-primary-light);
+}
+
+/* Hover effect */
+@media (hover: hover) {
+  .service-card:hover {
+    transform: translateY(-20px);
+  }
+}
+
+/*******************************/
+/* Services Section end */
+/*******************************/
