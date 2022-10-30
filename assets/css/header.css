@@ -1,0 +1,282 @@
+/* 
+This file contains
+1. Header styling
+*/
+
+/********************************/
+/* 1. Header styling */
+/* Custom properties for responsive header */
+.header {
+  --bg-color: transparent;
+  --border-bottom: 2px solid transparent;
+  --nav-max-width: 1320px;
+  --nav-toggler-icon-color: var(--color-primary);
+  --nav-list-bg-color: #fff;
+  --nav-link-color: #212529;
+
+  /* Mobile specific properties */
+  --nav-height-mobile: 50px;
+  --nav-logo-height-mobile: 30px;
+
+  /* Desktop specific properties */
+  --nav-height-desktop: 60px;
+  --nav-logo-height-desktop: 35px;
+
+  /* When header is fixed */
+  --bg-color-fixed: rgba(255, 255, 255, 0.9);
+  --border-bottom-fixed: 2px solid rgba(5, 121, 107, 0.9);
+  --nav-toggler-icon-color-fixed: var(--color-primary);
+  --nav-list-bg-color-fixed: #fff;
+  --nav-link-color-fixed: #212529;
+}
+
+.header {
+  border-bottom: var(--border-bottom);
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  height: var(--nav-height-mobile);
+  width: 100%;
+  max-width: var(--nav-max-width);
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--nav-link-color);
+  transition: all 0.3s ease;
+}
+
+.nav-brand:hover {
+  color: var(--nav-link-color);
+}
+
+.nav-brand-logo,
+.nav-brand-logo-white {
+  display: inline-block;
+  height: var(--nav-logo-height-mobile);
+}
+
+.nav-brand-logo {
+  display: none;
+}
+
+.nav-toggler {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Static icon styling */
+.nav-toggler-icon {
+  position: relative;
+}
+
+.nav-toggler-icon::before,
+.nav-toggler-icon::after {
+  content: '';
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggler-icon,
+.nav-toggler-icon::before,
+.nav-toggler-icon::after {
+  display: inline-block;
+  height: 2px;
+  width: 32px;
+  border-radius: 20px;
+  background-color: var(--nav-toggler-icon-color);
+  transition: all 0.3s ease;
+}
+
+.nav-toggler-icon::before {
+  top: -10px;
+}
+
+.nav-toggler-icon::after {
+  top: 10px;
+}
+
+.nav-list {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 100%;
+  list-style: none;
+  background-color: var(--nav-list-bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  /* This is to override Bootstrap's padding and margin to 'ul' elements */
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  padding: 8px 16px;
+  color: var(--nav-link-color);
+  position: relative;
+  opacity: 0.8;
+  line-height: 1;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: transparent;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: inherit;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link:active,
+.nav-link.active {
+  opacity: 1;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  bottom: 0;
+  background-color: var(--nav-link-color);
+}
+
+/* Styling when header is fixed */
+
+.header.fixed {
+  position: fixed;
+  background-color: var(--bg-color-fixed);
+  border-bottom: var(--border-bottom-fixed);
+}
+
+.header.fixed .nav-brand-logo-white {
+  display: none;
+}
+
+.header.fixed .nav-brand-logo {
+  display: inline-block;
+}
+
+.header.fixed .nav-toggler-icon,
+.header.fixed .nav-toggler-icon::before,
+.header.fixed .nav-toggler-icon::after {
+  background-color: var(--nav-toggler-icon-color-fixed);
+}
+
+.header.fixed .nav-list {
+  background-color: var(--nav-list-bg-color-fixed);
+}
+
+.header.fixed .nav-link:link,
+.header.fixed .nav-link:visited {
+  color: var(--nav-link-color-fixed);
+}
+
+.header.fixed .nav-link:hover::after,
+.header.fixed .nav-link.active::after {
+  background-color: var(--nav-link-color-fixed);
+}
+
+/* Styling when header is open */
+.header.open {
+  position: fixed;
+}
+
+.header.open .nav-toggler-icon {
+  background-color: transparent;
+}
+
+.header.open .nav-toggler-icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.header.open .nav-toggler-icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
+
+.header.open .nav-list {
+  left: 0;
+}
+
+/* Desktop header styling */
+/* Change min-width to desired value to achieve responsiveness at diff screen size.
+  (NOTE: We cannot use CSS properties to set min-width value. It as to be done manually) */
+@media screen and (min-width: 992px) {
+  .nav {
+    height: var(--nav-height-desktop);
+  }
+
+  .nav-brand {
+    font-size: 20px;
+  }
+
+  .nav-brand-logo,
+  .nav-brand-logo-white {
+    height: var(--nav-logo-height-desktop);
+  }
+
+  .nav-toggler {
+    display: none;
+  }
+
+  .nav-list {
+    position: relative;
+    height: auto;
+    width: auto;
+    top: auto;
+    left: auto;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    z-index: initial;
+  }
+
+  .header.fixed .nav-list {
+    background-color: transparent;
+  }
+}
