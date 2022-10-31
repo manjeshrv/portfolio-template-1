@@ -3,7 +3,7 @@ const header = document.querySelector('.header');
 const headerHeight = header.getBoundingClientRect().height;
 const nav = header.querySelector('.nav');
 const navToggler = document.querySelector('.nav-toggler');
-const heroSection = document.querySelector('.hero-section');
+const heroSection = document.querySelector('.section-hero');
 
 // Fixed header functionality
 const fixedNav = function (entries) {
