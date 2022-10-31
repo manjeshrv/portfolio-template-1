@@ -39,6 +39,8 @@ This file contains
   padding-right: 40px;
   border-radius: 200px;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  position: relative;
+  z-index: 10;
 }
 
 .hero-pill-card-1 {
