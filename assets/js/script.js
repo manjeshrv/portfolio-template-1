@@ -26,6 +26,15 @@ navToggler.addEventListener('click', function () {
   header.classList.toggle('open');
 });
 
+// Close header when clicked on nav-link (Visible only in mobile nav)
+nav.addEventListener('click', function (e) {
+  const el = e.target;
+
+  if (!el.classList.contains('nav-link')) return;
+
+  header.classList.remove('open');
+});
+
 // INIT AOS animation (on scroll reveal animation)
 // To learn about AOS visit https://github.com/michalsnik/aos
 AOS.init({ duration: 2000, once: true });
