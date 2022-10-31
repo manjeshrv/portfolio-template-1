@@ -67,7 +67,7 @@ This file contains
   /*******************************/
   /* Services Section start */
   /*******************************/
-  .services-section {
+  .section-services {
     background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 1),
@@ -90,7 +90,7 @@ This file contains
   /*******************************/
   /* Services Section start */
   /*******************************/
-  .services-section {
+  .section-services {
     background-position-y: -100%;
   }
 
