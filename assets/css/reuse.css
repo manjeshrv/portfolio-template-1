@@ -18,6 +18,8 @@ This file contains
   /* 1. Custom properties */
   --color-primary-light: #757095;
   --color-primary: #05796b;
+  --color-danger: #f57059;
+  --color-info: #3734a9;
 
   /* 2. Bootstrap custom properties overrides */
   --bs-font-sans-serif: 'Manrope', sans-serif;
@@ -30,6 +32,7 @@ img {
 
 p {
   color: var(--color-primary-light);
+  line-height: 1.7;
 }
 
 section {
@@ -45,13 +48,13 @@ section {
 }
 
 .btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.2);
 }
 
 .btn:active {
   transform: translateY(1px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 .btn.btn-primary,
@@ -60,6 +63,31 @@ section {
 .btn.btn-primary:focus {
   background-color: var(--color-primary);
   border: none;
+}
+
+.btn.btn-danger,
+.btn.btn-danger:hover,
+.btn.btn-danger:active,
+.btn.btn-danger:focus {
+  background-color: var(--color-danger);
+  border: none;
+}
+
+.btn.btn-light,
+.btn.btn-light:hover,
+.btn.btn-light:active,
+.btn.btn-light:focus {
+  background-color: #fff;
+  border: none;
+}
+
+.btn.btn-outline-light,
+.btn.btn-outline-light:hover,
+.btn.btn-outline-light:active,
+.btn.btn-outline-light:focus {
+  color: var(--color-primary);
+  box-shadow: 0 0 1px var(--color-primary) inset;
+  background-color: #fff;
 }
 
 /* 5. Reusable Util classes */
@@ -74,4 +102,22 @@ section {
 
 .text-primary {
   color: var(--color-primary);
+}
+
+.text-danger {
+  color: var(--color-danger);
+}
+
+.text-info {
+  color: var(--color-info) !important;
+}
+
+.short-para {
+  width: 100%;
+  max-width: 600px;
+}
+
+.btn-img-icon {
+  width: 24px;
+  height: 24px;
 }

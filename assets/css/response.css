@@ -19,6 +19,21 @@ This file contains
   /*******************************/
   /* Hero Section end */
   /*******************************/
+
+  /*******************************/
+  /* Footer start */
+  /*******************************/
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-social-menu {
+    grid-column: 1 / 3;
+  }
+
+  /*******************************/
+  /* Footer end */
+  /*******************************/
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -34,6 +49,35 @@ This file contains
 
   /*******************************/
   /* Hero Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Pricing Section start */
+  /*******************************/
+  .section-pricing {
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.8)
+      ),
+      url('../img/patterns/wave.svg');
+    background-size: 110%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+  /*******************************/
+  /* Pricing Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Discover Section start */
+  /*******************************/
+  .discover-pattern-dots {
+    top: 30%;
+    left: 15%;
+  }
+  /*******************************/
+  /* Discover Section end */
   /*******************************/
 }
 
@@ -58,6 +102,33 @@ This file contains
 
   /*******************************/
   /* Hero Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Discover Section start */
+  /*******************************/
+  .discover-pattern-dots {
+    max-width: 120px;
+    left: 25%;
+  }
+
+  .discover-pattern-zigzag-right {
+    top: clamp(1rem, 0.0481rem + 4.2308vw, 3.75rem);
+    right: clamp(1rem, 0.0481rem + 4.2308vw, 3.75rem);
+  }
+  /*******************************/
+  /* Discover Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Footer start */
+  /*******************************/
+  .footer-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  /*******************************/
+  /* Footer end */
   /*******************************/
 }
 
@@ -96,5 +167,27 @@ This file contains
 
   /*******************************/
   /* Services Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Discover Section start */
+  /*******************************/
+  .discover-pattern-dots {
+    left: 30%;
+  }
+  /*******************************/
+  /* Discover Section end */
+  /*******************************/
+
+  /*******************************/
+  /* Footer start */
+  /*******************************/
+  .footer-content {
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 0;
+  }
+
+  /*******************************/
+  /* Footer end */
   /*******************************/
 }

@@ -94,6 +94,9 @@ This file contains
 /*******************************/
 /* Customer Section start */
 /*******************************/
+.section-customers {
+}
+
 .customer-grid {
   display: flex;
   flex-wrap: wrap;
@@ -112,6 +115,8 @@ This file contains
 /*******************************/
 /* Services Section start */
 /*******************************/
+.section-services {
+}
 
 /* Service card */
 .service-card {
@@ -151,4 +156,230 @@ This file contains
 
 /*******************************/
 /* Services Section end */
+/*******************************/
+
+/*******************************/
+/* Process Section start */
+/*******************************/
+.birds-pattern {
+  width: 100px;
+}
+/*******************************/
+/* Process Section end */
+/*******************************/
+
+/*******************************/
+/* Download Section start */
+/*******************************/
+.section-download {
+}
+/*******************************/
+/* Download Section end */
+/*******************************/
+
+/*******************************/
+/* Pricing Section start */
+/*******************************/
+.section-pricing {
+}
+
+/* Pricing card  */
+.pricing-card {
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  background-color: #fff;
+}
+
+.pricing-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-top: 2px solid #ebeef0;
+}
+
+.pricing-list-item {
+  display: flex;
+  gap: 24px;
+}
+
+.pricing-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  font-size: 12px;
+}
+
+.pricing-card-primary {
+  color: #fff;
+  background-color: var(--color-primary);
+}
+
+.pricing-card-primary p {
+  color: #fff;
+}
+
+.pricing-card-primary .pricing-icon {
+  color: var(--color-primary);
+  background-color: #fff;
+}
+
+/*******************************/
+/* Pricing Section end */
+/*******************************/
+
+/*******************************/
+/* Testimonial Section start */
+/*******************************/
+.section-testimonials {
+}
+
+/*******************************/
+/* Testimonial Section end */
+/*******************************/
+
+/*******************************/
+/* Discover Section start */
+/*******************************/
+.section-discover {
+}
+
+.discover-content {
+  position: relative;
+  padding: clamp(1rem, 0.0481rem + 4.2308vw, 3.75rem);
+  overflow: hidden;
+}
+
+.discover-pattern {
+  position: absolute;
+}
+
+.discover-pattern img {
+  width: 100%;
+}
+
+.discover-pattern-dots {
+  top: 0;
+  left: 0;
+  max-width: 100px;
+  transform: translate(-50%, -50%);
+}
+
+.discover-pattern-zigzag {
+}
+
+.discover-pattern-zigzag img {
+  height: clamp(3.125rem, 2.476rem + 2.8846vw, 5rem);
+}
+
+.discover-pattern-zigzag-left {
+  bottom: clamp(1rem, 0.0481rem + 4.2308vw, 3.75rem);
+  left: clamp(1rem, 0.0481rem + 4.2308vw, 3.75rem);
+}
+
+.discover-pattern-zigzag-right {
+  top: 50%;
+  right: 16px;
+  transform: rotate(90deg);
+}
+/*******************************/
+/* Discover Section end */
+/*******************************/
+
+/*******************************/
+/* Footer start */
+/*******************************/
+
+.footer {
+}
+
+.footer-content {
+  display: grid;
+  grid-gap: 32px;
+}
+
+.footer-social-menu {
+  max-width: 300px;
+}
+
+.footer-social-nav ul {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.footer-social-nav a:link,
+.footer-social-nav a:visited {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-info);
+  transition: all 0.3s ease;
+}
+
+.footer-social-nav a:hover,
+.footer-social-nav a:active {
+  color: var(--color-primary);
+}
+
+.footer-social-nav svg {
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+}
+
+.footer-menu {
+}
+
+.footer-nav {
+}
+
+.footer-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.footer-list-item {
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--color-primary);
+  padding: 4px 12px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  background-color: #eee;
+}
+
+.footer-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-link span {
+  margin-left: 6px;
+}
+
+/*******************************/
+/* Footer end */
 /*******************************/
