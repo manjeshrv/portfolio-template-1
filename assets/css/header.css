@@ -146,7 +146,7 @@ This file contains
 .nav-link:visited {
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-size: 16px;
   padding: 8px 16px;
   color: var(--nav-link-color);
   position: relative;
