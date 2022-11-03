@@ -164,6 +164,33 @@ This file contains
 .birds-pattern {
   width: 100px;
 }
+
+.process-card {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed #939393;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+/* Hover effect */
+@media (hover: hover) {
+  .process-card:hover {
+    background-color: #fff;
+    border-color: transparent;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.process-card-icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
 /*******************************/
 /* Process Section end */
 /*******************************/
